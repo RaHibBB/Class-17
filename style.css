@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.t-left{
+    text-align: left;
+}
+.t-center{
+    text-align: center;
+}
+.t-right{
+    text-align: right;
+}
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+img{
+    max-width: 100%;
+}
+/* main css */
+.header{
+    background: #000;
+}
+.logo{
+    width: 150px;
+}
+.menu{}
+.menu ul{}
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+.menu ul li a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0px 20px;
+    line-height: 78px;
+}
+/* dropdown */
+.menu ul li ul{
+  position: absolute;
+    width: 250px;
+    background: black;
+    left: 0;
+    top: 130%;
+   opacity: 0;
+   visibility: hidden;
+   transition: .5s;
+}
+.menu ul li ul li{
+    display: block;
+    text-align: left;
+}
+.menu ul li ul li a{
+    display: block;
+}
+
+.menu ul li:hover ul{
+ opacity: 1;
+ visibility: visible;
+
+}
+/* end */
+/* banner section */
+.banner{
+    background-image: url(./a0c6042d4612d7adf44692fffac7e082.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 200px 0;
+}
+.cover-content {
+    line-height: 60px;
+}
+.banner h1{
+    font-size: 50px;
+}
+.banner h3{
+    font-size: 25px;
+    font-weight: bolder;
+}
+button{
+    border: none;
+}
+.btn{
+    margin: 0 10px;
+    margin-left: -5px;
+}
+.btn1 {
+    background: black;
+    color: #fff;
+    padding: 20px 40px;
+    font-size: 19px;
+    border-radius: 15px;
+    transition: .5s;
+    border: transparent solid 1px;
+}
+.btn2{
+    background: white;
+    color: black;
+    padding: 20px 40px;
+    font-size: 19px;
+    border-radius: 15px;
+    margin: 0 15px;
+    border: transparent solid 1px;
+    transition: .5s;
+}
+.btn1:hover{
+    color: black;
+    background: white;
+    border: black solid 1px;
+}
+.btn2:hover{
+    color: white;
+    background: black;
+    border: white solid 1px;
+}
+/* end */
+/* about me */
+.about{
+    background: rgb(135, 164, 113);
+    padding: 50px 0;
+}
+.about-content h1 {
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px white;
+}
+.hr{
+    width: 285px;
+    margin: auto;
+    border: 1px solid white;
+    margin-bottom: 40px;
+}
+.about-left{
+    width: 40%;
+    margin-top: 35px;
+    color: white;
+}
+.about-right{
+    width: 40%;
+    
+}
+.about-right img {
+    width: 300px;
+}
+/* end */
+/* service */
+.service{
+    background: rgb(96, 106, 100);
+    padding: 50px 0;
+}
+.service-content{}
+.service-content h1{
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 10px white;
+}
+.hr1{
+    width: 285px;
+    margin: auto;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+.service-content h2 {
+    color: white;
+    font-size: 35px;
+    margin: 20px 0;
+}
+.service-content p{
+    color: white;
+    width: 50%;
+    margin: auto;
+}
+/* card */
+.card{
+    margin-top: 70px;
+}
+.card1{
+    width: 30%;
+    background: white;
+    border-radius: 20px;
+    padding: 40px 50px;
+    margin-right: 3%;
+}
+.card-left{
+    width: 30%;
+}
+.card-left img {
+    width: 50px;
+}
+.card-right{
+    width: 70%;
+}
+.card-right h1{
+    color: rgb(81, 107, 134);
+    margin-bottom: 15px;
+}
+.card-right p{
+    color: rgb(181, 192, 202);
+}
+/* end */
+/* portfolio */
+.port{
+    background: rgb(135, 164, 113);
+    padding: 80px 0;
+}
+.port-content{
+    margin-bottom: 50px;
+    line-height: 30px;
+
+}
+.port-content h1{
+    color: white;
+}
+.port-content h5{
+    color: white;
+}
+
+.port-img{
+    width: 45%;
+    border: 1px solid white;
+}
+.port-img img{
+   width: 100%;
+
+}
+.port-img h5{
+    margin-top: 10px;
+    color: blueviolet;
+}
+.port-img p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+.port-content1{
+    /* margin-bottom: 50px; */
+}
+.port-content2{
+ 
+}
+.a1{
+ width: 25%;
+}
+.a1 img{
+    height: 200px;
+    margin-top: 50px;
+}
+/* end */
+/* team members */
+.team{
+    background-color: rgb(91, 151, 118);
+    padding: 50px 0;
+}
+.team-content h1{
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.sec-img{
+    width: 33%;
+}
+.sec-img img{
+    height: 300px;
+}
+.logo1{
+    font-size: 30px;
+    color: white;
+    margin: 10px 0;
+    letter-spacing: 10px;
+    width: 70%;
+}
+/* end */
+/* work */
+.work{
+    background: rgb(96, 106, 100);
+    color: #fff;
+    padding: 100px 0;
+}
+.workk h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.workk p{
+    width: 500px;
+    margin: auto;
+}
+button.btnn {
+    padding: 15px 35px;
+    font-size: 20px;
+    background: rgb(0, 188, 156);
+    color: white;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+footer{
+    background: #000;
+    color: white;
+    font-size: 20px;
+    padding: 40px;
+    text-align: center;
+}
